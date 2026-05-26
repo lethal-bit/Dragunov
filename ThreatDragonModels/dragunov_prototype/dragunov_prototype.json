@@ -18,6 +18,35 @@
         "version": "2.6.2",
         "cells": [
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "bdf1dfa0-8465-459d-9f2a-ab37237fb642",
+            "source": {
+              "x": -80,
+              "y": -1090
+            },
+            "target": {
+              "x": -80,
+              "y": -770
+            },
+            "vertices": []
+          },
+          {
             "position": {
               "x": -30.00000000000025,
               "y": -1090
@@ -263,7 +292,7 @@
           },
           {
             "position": {
-              "x": -180,
+              "x": -260,
               "y": -960
             },
             "size": {
@@ -499,31 +528,101 @@
             }
           },
           {
-            "shape": "trust-boundary-curve",
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
             "width": 200,
             "height": 100,
-            "zIndex": 5,
+            "zIndex": 10,
             "connector": "smooth",
             "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "type": "tm.Flow",
+              "name": "Data Flow",
               "description": "",
-              "isTrustBoundary": true,
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
-              "Trust Boundary"
+              "Data Flow"
             ],
-            "id": "9d900586-a2ea-4992-8457-05da7f967c34",
+            "id": "64a80683-42e3-4074-9dc2-328a8f6491d0",
             "source": {
-              "x": -50,
-              "y": -1020
+              "cell": "473865de-540e-42ab-845e-4319aa023fdf",
+              "port": "29a43098-149c-45fe-8eb1-e67079ef6943"
             },
             "target": {
-              "x": -84,
-              "y": -700
+              "cell": "55525ecd-d3eb-4985-ade9-ff32e9feb094",
+              "port": "6408e7a9-bb5a-4af6-9974-8599e64d6408"
+            },
+            "vertices": [
+              {
+                "x": -110,
+                "y": -1000
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "165e0b86-ce98-406e-9290-7a4a0694ef3a",
+            "source": {
+              "x": -289,
+              "y": -830
+            },
+            "target": {
+              "x": -189,
+              "y": -730
             }
           }
         ]
